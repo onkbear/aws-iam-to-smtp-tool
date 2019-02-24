@@ -10,6 +10,6 @@
   "dependencies": {},
   "devDependencies": {
     "aws-iam-to-smtp": "0.0.1",
-    "browserify": "^16.2.3"
+    "browserify": "16.2.3"
   }
 }
