@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web App of converting Amazon SES SMTP credentials from existing AWS credentials">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Amazon SES SMTP Credentials Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Amazon SES SMTP credentials from IAM credentials</h1>
+      <form>
+        <div class="form-group">
+          <label>IAM Secret Key</label>
+          <input type="text" class="form-control" id="key" placeholder="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY ...">
+        </div>
+        <div class="form-group">
+          <label>Region</label>
+          <input type="text" class="form-control" id="region" placeholder="us-east-1 ...">
+        </div>
+        <button type="button" id="calculate" class="btn btn-primary">Calculate</button>
+        <div class="form-group">
+          <label>SMTP Password</label>
+          <input type="text" class="form-control" id="smtp-password" disabled>
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
